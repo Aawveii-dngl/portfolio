@@ -11,6 +11,7 @@ export default function Maincomp(){
     return(
         <React.Fragment>
             <Navigate/>
+            <br/>
             <Router>
                 <Switch> 
                     <Route exact path = "/" component = {Homecomp}/>
