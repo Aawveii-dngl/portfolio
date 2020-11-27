@@ -30,9 +30,9 @@ export default function Homecomp(){
             <br/>
             <IconContext.Provider value={{ color:'grey', size:'3rem',}} >
                  <Row className="justify-content-md-center">
-                    <Col xs lg ="1"><FaGithub /></Col>
-                    <Col xs lg ="1"><FaLinkedin/></Col>
-                    <Col xs lg ="1"><FaYoutube/></Col>
+                    <Col xs lg ="1"><a href= "https://github.com/Aawveii-dngl/portfolio"><FaGithub /></a></Col>
+                    <Col xs lg ="1"><a href = "https://www.linkedin.com/in/rakesh-shrestha-180171186/"><FaLinkedin/></a></Col>
+                    <Col xs lg ="1"><a href = "https://www.youtube.com/"><FaYoutube/></a></Col>
                 </Row>
             </IconContext.Provider>
             </Container>
