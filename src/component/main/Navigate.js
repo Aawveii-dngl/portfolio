@@ -4,11 +4,11 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 .navbar {
-    background-color: grey;
+    background-color:lightpink;
     margin: auto;
 }
 .navbar-brand, .navbar-nav, .nav-link{
-    color: #bbb;
+    color:purple;
     
     &:hover{
         color:white;
@@ -20,7 +20,7 @@ const Styles = styled.div`
 function Navigate(){
     return(
       <Styles>
-      <Navbar bg="primary" expand="lg">
+      <Navbar expand="lg">
             <Navbar.Brand href="/">Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">

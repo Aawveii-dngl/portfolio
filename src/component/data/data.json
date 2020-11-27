@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "name":"Strategy",
+        "img":"https://www.standard.co.uk/s3fs-public/thumbnails/image/2018/11/06/15/halsey-mtvema-1106.jpg",
+        "preview":"Lorem ipsum dolor sit amet",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 1,
+        "name":"Branding",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYYTNRKdM4HkA3w6vjllSt1iooORYwGcCpow&usqp=CAU",
+        "preview":"Lorem ipsum dolor sit amet",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 2,
+        "name":"Development",
+        "img":"https://media.altpress.com/uploads/2018/10/halsey-promo-pic.jpg",
+        "preview":"Lorem ipsum dolor sit amet",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 3,
+        "name":"Web Design",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToa7nruhm-_sM1_DJ_1Xw-Tj7yrvTSXCKE8Q&usqp=CAU",
+        "preview":"Lorem ipsum dolor sit amet",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 4,
+        "name":"Social Media",
+        "img":"https://headlineplanet.com/home/wp-content/uploads/2018/11/Halsey-VSFS-8.jpg",
+        "preview":"Lorem ipsum dolor sit amet",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 5,
+        "name":"Ecommerce",
+        "img":"https://m.media-amazon.com/images/M/MV5BMjZjYjBkMDItNmRkNC00YmJlLThkOTQtNGY4OGZjOWE4ZGFmXkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_.jpg",
+        "preview":"Lorem ipsum dolor sit amet",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+]
