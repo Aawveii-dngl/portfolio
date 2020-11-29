@@ -5,6 +5,7 @@ import Contactcomp from '../Contactcomp';
 import Homecomp from '../Homecomp';
 import Navigate from './Navigate';
 import Error from './Error';
+import Servicecomp from '../Servicecomp';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 
 export default function Maincomp(){
@@ -17,6 +18,7 @@ export default function Maincomp(){
                     <Route exact path = "/" component = {Homecomp}/>
                     <Route  path = "/about" component = {Aboutcomp}/>
                     <Route  path = "/contact" component = {Contactcomp}/>
+                    <Route  path = "/service" component = {Servicecomp}/>
                     <Route component = {Error}/>
                 </Switch>
             </Router>
