@@ -3,13 +3,17 @@ import {Button,Container,Row,Col} from 'react-bootstrap';
 import {FaGithub, FaLinkedin,FaYoutube } from "react-icons/fa";
 import { IconContext } from 'react-icons';
 import {Control,LocalForm,Errors} from 'react-redux-form';
+import zxcvbn from 'zxcvbn';
 
 const required = (val) => val && val.length;
 const maxLength = (len) =>(val) => !(val) || (val.length <=len);
 const minLength = (len) =>(val) => (val) && (val.length >=len);
-const isNumber = (val) => !isNaN(Number(val));
+const isNumber = (val) => isNaN(Number(val));
 const validEmail = (val) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 const Checked = (val) => val;
+const Simple = (val) => !/^[A-Za-z]+$/i.test(val);
+const Char = (val) => /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/i.test(val);
+
 
 
 export default class Contactcomp extends Component{
@@ -35,7 +39,7 @@ export default class Contactcomp extends Component{
 
     confPass = (event) => {
          if (event.target.value !== this.state.password) { 
-             <p>Error</p>
+             
               this.setState({confpassword: event.target.value}) } }
     
     handlerSubmit(values){
@@ -116,7 +120,7 @@ export default class Contactcomp extends Component{
                         placeholder="Enter password"
                         onChange = {this.Pass}
                         validators = {{
-                            required
+                            required,Simple,isNumber,minLength:minLength(7), maxLength:maxLength(30),Char
                         }}
                         />
                         <Errors
@@ -124,31 +128,15 @@ export default class Contactcomp extends Component{
                         model=".password"
                         show="touched"
                         messages= {{
-                            required:'Required'
+                            required:'Required',
+                            Simple:'Password is simple',
+                            isNumber:'Should not contain only numbers',
+                            minLength:'Must be greater than 7 characters',
+                            maxLength:'Must be less tham 30 characters',
+                            Char:'Must contain a special character'
                         }}
                         />  
                     </Col>
-                </Row>
-                <Row className = "form-group" >
-                <Col>
-                    <Control.text model = ".confpassword"
-                    name="confpassword" 
-                    className = "form-control"
-                    placeholder="Enter password again"
-                    onChange = {this.confPass}
-                    validators = {{
-                        required
-                    }}
-                    />
-                    <Errors
-                    className="text-danger"
-                    model=".confpassword"
-                    show="touched"
-                    messages= {{
-                        required:'Required',
-                    }}
-                    />  
-                </Col>
                 </Row>
                 <Row className = "form-group" >
                     <Col>
